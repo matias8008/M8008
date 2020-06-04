@@ -1,0 +1,35 @@
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\bin\Debug\DataTier.dll.config
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\bin\Debug\DataTier.dll
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\bin\Debug\DataTier.pdb
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\obj\Debug\DataTier.csprojAssemblyReference.cache
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\obj\Debug\DataTier.csproj.CoreCompileInputs.cache
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\obj\Debug\DataTier.dll
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\obj\Debug\DataTier.pdb
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\obj\Debug\DataTier.Properties.Resources.resources
+C:\Users\matias8008win\source\repos\ProyectV1\DataTier\obj\Debug\DataTier.csproj.GenerateResource.cache
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\bin\Debug\DataTier.dll.config
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\bin\Debug\DataTier.dll
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\bin\Debug\DataTier.pdb
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\obj\Debug\DataTier.csprojAssemblyReference.cache
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\obj\Debug\DataTier.Properties.Resources.resources
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\obj\Debug\DataTier.csproj.GenerateResource.cache
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\obj\Debug\DataTier.csproj.CoreCompileInputs.cache
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\obj\Debug\DataTier.dll
+C:\Users\Matias\Desktop\ProyectV1_Git\proyectv1\DataTier\obj\Debug\DataTier.pdb
+C:\Users\matias8008\Desktop\proyectv1\DataTier\bin\Debug\DataTier.dll.config
+C:\Users\matias8008\Desktop\proyectv1\DataTier\bin\Debug\DataTier.dll
+C:\Users\matias8008\Desktop\proyectv1\DataTier\bin\Debug\DataTier.pdb
+C:\Users\matias8008\Desktop\proyectv1\DataTier\obj\Debug\DataTier.csprojAssemblyReference.cache
+C:\Users\matias8008\Desktop\proyectv1\DataTier\obj\Debug\DataTier.Properties.Resources.resources
+C:\Users\matias8008\Desktop\proyectv1\DataTier\obj\Debug\DataTier.csproj.GenerateResource.cache
+C:\Users\matias8008\Desktop\proyectv1\DataTier\obj\Debug\DataTier.dll
+C:\Users\matias8008\Desktop\proyectv1\DataTier\obj\Debug\DataTier.pdb
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\bin\Debug\DataTier.dll.config
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\bin\Debug\DataTier.dll
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\bin\Debug\DataTier.pdb
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\obj\Debug\DataTier.csprojAssemblyReference.cache
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\obj\Debug\DataTier.Properties.Resources.resources
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\obj\Debug\DataTier.csproj.GenerateResource.cache
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\obj\Debug\DataTier.csproj.CoreCompileInputs.cache
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\obj\Debug\DataTier.dll
+C:\Users\Matias\Desktop\Proyectos VS\proyectv1\DataTier\obj\Debug\DataTier.pdb

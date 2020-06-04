@@ -1,0 +1,45 @@
+﻿<Window x:Class="PresentationTier.InsertEmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentationTier"
+        mc:Ignorable="d"
+        Title="InsertEmployee" WindowState="Maximized">
+
+    <Grid HorizontalAlignment="Center" Width="509">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="106*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
+
+        <RadioButton x:Name="radioButton_Male" GroupName="Gender" Content="Male" HorizontalAlignment="Left" Margin="5,202,0,0" VerticalAlignment="Top" Checked="RadioButton_Male_Checked" Grid.Column="2" Height="20" Width="60"/>
+        <RadioButton x:Name="radioButton_Female" GroupName="Gender" Content="Female" Margin="0,202,33,0" VerticalAlignment="Top" Grid.Column="2" Checked="RadioButton_Female_Checked" Height="20" RenderTransformOrigin="-0.474,0.533" HorizontalAlignment="Right" Width="64"/>
+        <RadioButton x:Name="radioButton_Other" GroupName="Gender" Content="Other" Margin="0,202,79,0" VerticalAlignment="Top" Grid.Column="2" Checked="RadioButton_Other_Checked" Height="20" RenderTransformOrigin="0.592,0.533" HorizontalAlignment="Right" Width="55" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox_Id_Personal" Height="23" Margin="0,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="TextBox_Id_Personal_TextChanged" Grid.Column="2"/>
+        <TextBox x:Name="textBox_LastName" Height="23" Margin="0,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="TextBox_LastName_TextChanged" Grid.Column="2"/>
+        <TextBlock x:Name="textBlock_Id_Personal" HorizontalAlignment="Left" Margin="10,90,0,0" TextWrapping="Wrap" Text="ID Personal" VerticalAlignment="Top" Height="23" Width="68" Grid.Column="3"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="128,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="209" FontSize="24" FontWeight="Bold" Grid.Column="2" Grid.ColumnSpan="3"><Run Text="EMPLOYEE FORM" /><Run Text=" "/></TextBlock>
+        <TextBox x:Name="textBox_FirstName" Margin="0,161,0,0" TextWrapping="Wrap" TextChanged="TextBox_FirstName_TextChanged" Grid.Column="2" RenderTransformOrigin="0.492,-1.25" Height="24" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_LastName" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Height="23" Width="68" Grid.Column="3"/>
+        <TextBlock x:Name="textBlock_FirstName" HorizontalAlignment="Left" Margin="10,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="68" Grid.Column="3"><Run Text="Fir"/><Run Text="st Name"/></TextBlock>
+        <TextBox x:Name="textBox_PAddress" Height="24" Margin="0,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBlock x:Name="textBlock_PAddress" HorizontalAlignment="Left" Margin="10,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="68" Text="Address" Grid.Column="3"/>
+        <TextBlock x:Name="textBlock_DateOfBirth" Margin="10,310,0,87" TextWrapping="Wrap" Grid.Column="2"><Run Text="Date of Birth "/><Run Text="(Select)"/></TextBlock>
+        <Button x:Name="button_InsertData" Content="Insert data" Margin="0,381,0,0" Grid.Column="2" Click="Button_InsertData_Click" Height="24" VerticalAlignment="Top" HorizontalAlignment="Right" Width="167"/>
+        <Button x:Name="button_PersonList" Content="Show list of employees" Grid.Column="4" Margin="10,88,0,0" VerticalAlignment="Top" Click="Button_PersonList_Click" Height="20" HorizontalAlignment="Left" Width="170"/>
+        <DatePicker x:Name="datePicker_DateOfBirth" Margin="0,339,4,0" Grid.Column="2" HorizontalAlignment="Right" Width="158" Height="24" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Id_Employee_show" Grid.Column="2" Height="23" Margin="0,275,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Id_Employee" Grid.Column="3" Margin="10,282,0,0" TextWrapping="Wrap" Text="Id Employee" VerticalAlignment="Top" Height="16" RenderTransformOrigin="2.25,0.5" HorizontalAlignment="Left" Width="12"/>
+        <Button x:Name="button_Search" Content="Search" Grid.Column="4" Margin="25,234,0,0" Click="Button_Search_Click" HorizontalAlignment="Left" Width="138" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_Search" Grid.Column="4" Height="23" Margin="25,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="138"/>
+        <TextBlock x:Name="textBlock_Message" Grid.Column="3" HorizontalAlignment="Left" Margin="61,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="234" Foreground="#FFBF0D0D" Height="16"/>
+        <Label x:Name="label" Content="ID personal, last name &#xD;&#xA;or first name;" VerticalContentAlignment="Center" Grid.Column="4" Margin="33,139,0,0" VerticalAlignment="Top" Height="46" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontStretch="Condensed" Width="130"/>
+        <Button x:Name="button_Back" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="3,10,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="Button_Back_Click"/>
+
+
+    </Grid>
+</Window>

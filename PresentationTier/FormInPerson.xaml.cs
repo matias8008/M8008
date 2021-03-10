@@ -19,7 +19,7 @@ namespace PresentationTier
     /// <summary>
     /// Lógica de interacción para FormInPerson.xaml
     /// </summary>
-    public partial class FormInPerson : Window
+    public partial class FormInPerson : Page
     {
 
         Persons persons = new Persons();
@@ -88,15 +88,14 @@ namespace PresentationTier
 
         private void Button_PersonList_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow(persons);
-            mainWindow.ShowDialog();
+            PresentData presentData = new PresentData(persons);
+            this.NavigationService.Navigate(presentData);
         }
 
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
             PresentationWindow presentationWindow = new PresentationWindow();
-            presentationWindow.ShowDialog();
-            Close();
+            this.NavigationService.Navigate(presentationWindow);
         }
     }
 }

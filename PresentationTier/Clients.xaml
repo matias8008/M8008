@@ -1,11 +1,11 @@
-﻿<Window x:Name="Clients1" x:Class="PresentationTier.Clients"
+﻿<Page x:Name="Clients1" x:Class="PresentationTier.Clients"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PresentationTier"
         mc:Ignorable="d"
-        Title="Clients" WindowState="Maximized">
+        Title="Clients">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -42,4 +42,4 @@
         <Button x:Name="Button_Show_List" Height="20" Width="100" Margin="148,265,152,219" Grid.Column="1" Click="Button_Show_List_Click" Content="Show List"/>
         <Button x:Name="Button_Back" Height="20" Width="100" Margin="10,10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Button_Back_Click" Content="Back"/>
     </Grid>
-</Window>
+</Page>

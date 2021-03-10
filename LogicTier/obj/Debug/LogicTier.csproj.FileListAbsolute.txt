@@ -37,3 +37,23 @@ C:\Users\Matias\Desktop\Proyectos VS\proyectv1\LogicTier\obj\Debug\LogicTier.csp
 C:\Users\Matias\Desktop\Proyectos VS\proyectv1\LogicTier\obj\Debug\LogicTier.csproj.CopyComplete
 C:\Users\Matias\Desktop\Proyectos VS\proyectv1\LogicTier\obj\Debug\LogicTier.dll
 C:\Users\Matias\Desktop\Proyectos VS\proyectv1\LogicTier\obj\Debug\LogicTier.pdb
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\bin\Debug\LogicTier.dll
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\bin\Debug\LogicTier.pdb
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\bin\Debug\DataTier.dll
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\bin\Debug\DataTier.pdb
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\bin\Debug\DataTier.dll.config
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\obj\Debug\LogicTier.csprojAssemblyReference.cache
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\obj\Debug\LogicTier.csproj.CoreCompileInputs.cache
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\obj\Debug\LogicTier.csproj.CopyComplete
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\obj\Debug\LogicTier.dll
+C:\Users\Matias\Desktop\ProjectV1\LogicTier\obj\Debug\LogicTier.pdb
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\bin\Debug\LogicTier.dll
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\bin\Debug\LogicTier.pdb
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\bin\Debug\DataTier.dll
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\bin\Debug\DataTier.pdb
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\bin\Debug\DataTier.dll.config
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.csprojAssemblyReference.cache
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.csproj.CoreCompileInputs.cache
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.csproj.CopyComplete
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.dll
+C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.pdb

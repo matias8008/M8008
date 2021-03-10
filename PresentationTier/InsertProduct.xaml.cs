@@ -13,17 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LogicTier;
 
+
 namespace PresentationTier
 {
     /// <summary>
     /// Lógica de interacción para InsertProduct.xaml
     /// </summary>
-    public partial class InsertProduct : Window
+    public partial class InsertProduct : Page
     {
         Products products = new Products();
         ComboBoxItem comboBoxItem = new ComboBoxItem();
         
-
         
         public InsertProduct()
         {
@@ -91,7 +91,6 @@ namespace PresentationTier
                 products.ProductName = ProductNameTextBox.Text;
                
                 if (CategorieComboBox.SelectedItem == _1)
-                    //products.Categorie = int.Parse(CategorieComboBox.Text);
                     products.Categorie = 1;
                 if (CategorieComboBox.SelectedItem == _2)
                     products.Categorie = 2;
@@ -130,6 +129,12 @@ namespace PresentationTier
                 message = products.RegisterProducts();
 
                 messageTextBlock.Text = message;
+
+                if (message == "Product stored")
+                {
+                    buttonInsertProduct.IsEnabled = false;
+                }
+               
                 
             }
 
@@ -141,15 +146,14 @@ namespace PresentationTier
 
         private void Button_Show_List_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow(products);
-            mainWindow.ShowDialog();
-        }
+            //MainWindow mainWindow = new MainWindow(products);
+            //mainWindow.dataGrid_showInfo();
 
+        }
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
             PresentationWindow presentationWindow = new PresentationWindow();
-            presentationWindow.ShowDialog();
-            Close();
+            this.NavigationService.Navigate(presentationWindow);
         }
     }
 }

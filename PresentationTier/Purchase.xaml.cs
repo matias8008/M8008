@@ -17,7 +17,7 @@ namespace PresentationTier
     /// <summary>
     /// Lógica de interacción para Purchase.xaml
     /// </summary>
-    public partial class Purchase : Window
+    public partial class Purchase : Page
     {
         public Purchase()
         {

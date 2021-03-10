@@ -11,8 +11,8 @@ namespace DataTier
     public class Connections
     {
         //Connection to HP laptop 
-        public static SqlConnection sqlConnection = new SqlConnection
-            ("Data Source=LAPTOP-82S43OE2\\ROOT;Initial Catalog=ProyectV1;Integrated Security=True");
+        public static SqlConnection sqlConnection = new SqlConnection("Data Source = MATIASJAVEG355A\\SQLEXPRESS; Initial Catalog = ProyectV1; Integrated Security = True");
+        //("Data Source = LAPTOP-82S43OE2\\SQLEXPRESS;Initial Catalog = ProyectV1; Integrated Security = True");
 
         //Open connection
         void OpenConnection()
@@ -181,8 +181,8 @@ namespace DataTier
         public String CheckLogin(String userName, String password)
         {
             String queryUserPassword = " SELECT UserName, SecretKey FROM Users WHERE UserName = " + userName + ";";
-            String result = "";
-            List<String> list = new List<string>();
+            _ = new List<string>();
+            string result;
             try
             {
                 OpenConnection();
@@ -197,13 +197,13 @@ namespace DataTier
 
                     while (sqlDataReader.Read())
                     {
-                        
+
                         resultConsultaUser = sqlDataReader.GetString(0);
                         resultConsultaPassword = sqlDataReader.GetString(1);
                     }
                     sqlDataReader.NextResult();
                 }
-                
+
                 if (userName.Equals(resultConsultaUser) && password.Equals(resultConsultaPassword))
                 {
                     result = "Authentification correct";

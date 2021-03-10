@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataTier;
 using System.Data;
 
@@ -33,7 +30,7 @@ namespace LogicTier
 
         public String RegisterProducts()
         {
-            String message="";
+            String message;
 
             List<Parameters> list = new List<Parameters>();
 
@@ -59,7 +56,6 @@ namespace LogicTier
 
             catch (Exception exception)
             {
-
                 throw exception;
             }
 

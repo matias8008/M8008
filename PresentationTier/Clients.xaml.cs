@@ -20,7 +20,7 @@ namespace PresentationTier
     /// <summary>
     /// Lógica de interacción para Clients.xaml
     /// </summary>
-    public partial class Clients : Window
+    public partial class Clients : Page
     {
 
         ClientsLogicTier clientsLogicTier = new ClientsLogicTier();
@@ -45,8 +45,8 @@ namespace PresentationTier
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
             PresentationWindow presentationWindow = new PresentationWindow();
-            presentationWindow.ShowDialog();
-            Close();
+            presentationWindow.InitializeComponent();
+
         }
     }
 }

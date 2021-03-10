@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3A316426-CE80-4500-81FB-6F450A39D2AF}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>PresentationTier</RootNamespace>
     <AssemblyName>PresentationTier</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -96,6 +96,9 @@
     <Compile Include="SearchProduct.xaml.cs">
       <DependentUpon>SearchProduct.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Clients.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,7 +119,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="PresentData.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -127,8 +130,8 @@
     <Compile Include="FormInPerson.xaml.cs">
       <DependentUpon>FormInPerson.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="PresentData.xaml.cs">
+      <DependentUpon>PresentData.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PresentationWindow.xaml">
@@ -147,9 +150,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PresentationWindow.xaml.cs">
+    <Compile Include="PresentationWindow.cs">
       <DependentUpon>PresentationWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -195,6 +202,39 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ejemploTio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="012-superheroes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="008-business man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="009-giftbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="016-profit growth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="020-vision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="015-business partnership.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="019-idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="006-goal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="005-fight.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,12 +18,13 @@ namespace PresentationTier
     /// <summary>
     /// Lógica de interacción para InsertEmployee.xaml
     /// </summary>
-    public partial class InsertEmployee : Window
+    public partial class InsertEmployee : Page
     {
         Employee employee = new Employee();
        
         //Gender check
         Char gender;
+
         public InsertEmployee()
         {
             InitializeComponent();
@@ -88,7 +89,7 @@ namespace PresentationTier
                 employee.SystemInDate = DateTime.Now;
                 message = employee.RegisterEmployee();
 
-                textBlock_Id_Employee_show.Text = employee.Id_Employee;
+                //textBlock_Id_Employee_show.Text = employee.Id_Employee;
                 textBlock_Message.Text = message;
             }
             catch (Exception exception)
@@ -99,24 +100,32 @@ namespace PresentationTier
 
         private void Button_PersonList_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow(employee);
-            mainWindow.ShowDialog();
+            PresentData presentData = new PresentData(employee);
+            this.NavigationService.Navigate(presentData);
         }
-
+        /*
         private void Button_Search_Click(object sender, RoutedEventArgs e)
         {
             String newQuery = textBox_Search.Text;
-            MainWindow mainWindow = new MainWindow(newQuery);
-            mainWindow.ShowDialog();
+            PresentData presentData = new PresentData(newQuery);
+            this.NavigationService.Navigate(presentData);
 
         }
-
+        */
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
             PresentationWindow presentationWindow = new PresentationWindow();
-            presentationWindow.ShowDialog();
-            Close();
+            this.NavigationService.Navigate(presentationWindow);
         }
 
+        private void TextBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_PAddress_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

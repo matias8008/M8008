@@ -19,7 +19,7 @@ namespace PresentationTier
     /// <summary>
     /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class Login : Page
     {
         UserLogicTier userLogicTier = new UserLogicTier();
 
@@ -27,13 +27,13 @@ namespace PresentationTier
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            String message = " ";
             try
             {
                 String userName = userTextBox.Text;
                 String password = passwordBox.Password.ToString();
 
 
+                string message;
                 if (userName != "" && password != "")
                 {
                     message = userLogicTier.AuthenticateUser(userName, password);
@@ -41,17 +41,15 @@ namespace PresentationTier
                     if (message.Equals("Authentification correct"))
                     {
                         PresentationWindow presentationWindow = new PresentationWindow();
-                        presentationWindow.ShowDialog();
+                        this.NavigationService.Navigate(presentationWindow);
                         Response.Text = message;
-
-                        this.Close();
                     }
                     else
                     {
                         Response.Text = message;
                     }
                 }
-                else if(userName == "" && password != "")
+                else if (userName == "" && password != "")
                 {
                     message = "User name is empty";
                     Response.Text = message;
@@ -67,14 +65,14 @@ namespace PresentationTier
                     Response.Text = message;
                 }
 
-                    
+
             }
             catch (Exception a)
             {
                 throw a;
             }
 
-            
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

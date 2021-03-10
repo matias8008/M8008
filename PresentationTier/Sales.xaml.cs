@@ -17,7 +17,7 @@ namespace PresentationTier
     /// <summary>
     /// Lógica de interacción para Sales.xaml
     /// </summary>
-    public partial class Sales : Window
+    public partial class Sales : Page
     {
         public Sales()
         {

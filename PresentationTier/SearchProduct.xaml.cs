@@ -17,7 +17,7 @@ namespace PresentationTier
     /// <summary>
     /// Lógica de interacción para SearchProduct.xaml
     /// </summary>
-    public partial class SearchProduct : Window
+    public partial class SearchProduct : Page
     {
         public SearchProduct()
         {

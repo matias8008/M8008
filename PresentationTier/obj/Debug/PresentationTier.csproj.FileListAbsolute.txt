@@ -160,3 +160,4 @@ C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Presentati
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentationTier.csproj.CopyComplete
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentationTier.exe
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentationTier.pdb
+C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\App.baml

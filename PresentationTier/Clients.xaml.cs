@@ -22,7 +22,6 @@ namespace PresentationTier
     /// </summary>
     public partial class Clients : Page
     {
-
         ClientsLogicTier clientsLogicTier = new ClientsLogicTier();
         //String clientCode;
 
@@ -32,20 +31,21 @@ namespace PresentationTier
           
         }
 
-        private void Button_Search_Click(object sender, RoutedEventArgs e)
+        private void Button_Save_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void Button_Show_List_Click(object sender, RoutedEventArgs e)
         {
-
+            //PresentData presentData = new PresentData(clientsLogicTier);
+            //this.NavigationService.Navigate(presentData);
         }
 
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
             PresentationWindow presentationWindow = new PresentationWindow();
-            presentationWindow.InitializeComponent();
+            this.NavigationService.Navigate(presentationWindow);
 
         }
     }

@@ -40,8 +40,8 @@ namespace PresentationTier
 
         private void Button_Products_Click(object sender, RoutedEventArgs e)
         {
-            Products products = new Products();
-            this.NavigationService.Navigate(products);
+            InsertProduct insertProducts = new InsertProduct();
+            this.NavigationService.Navigate(insertProducts);
         }
 
         private void Button_Sales_Click(object sender, RoutedEventArgs e)

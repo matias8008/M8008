@@ -7,39 +7,70 @@
         mc:Ignorable="d"
         Title="Clients">
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
 
-        <TextBox x:Name="textBox_Company_Name" HorizontalAlignment="Left" Height="28" Margin="150,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230" />
-        <TextBox x:Name="textBox_Contact_Last_Name" HorizontalAlignment="Left" Margin="150,78,0,0" TextWrapping="Wrap" Width="230" Height="29" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Contact_First_Name" HorizontalAlignment="Left" Height="29" Margin="150,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
-        <TextBox x:Name="textBox_Telephone" HorizontalAlignment="Left" Height="29" Margin="150,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
-        <TextBox x:Name="textBox_Address1" HorizontalAlignment="Left" Height="29" Margin="150,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
-        <TextBox x:Name="textBox_Address2" HorizontalAlignment="Left" Height="29" Margin="150,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
-        <TextBox x:Name="textBox_City" Height="29" Margin="140,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Left" Width="230"/>
-        <TextBox x:Name="textBox_Country" Height="29" Margin="140,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Left" Width="230"/>
-        <TextBox x:Name="textBox_Zone" Height="29" Margin="140,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Left" Width="230"/>
-        <TextBox x:Name="textBox_Post_Code" HorizontalAlignment="Left" Height="29" Margin="140,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Grid.Column="1"/>
-        <TextBox x:Name="textBox_Sales_Representative" HorizontalAlignment="Left" Height="29" Margin="140,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Grid.Column="1"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
 
-        <Label x:Name="Label_Company_Name" Content="Company name *" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="29" Width="125"/>
-        <Label x:Name="Label_Contact_Last_Name" Content="Contact last name" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Height="29" Width="125"/>
-        <Label x:Name="Label_Contact_First_Name" Content="Contact first name" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Height="29" Width="125"/>
-        <Label x:Name="Label_Telephone" Content="Telephone *" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Height="29" Width="125"/>
-        <Label x:Name="Label_Address_1" Content="Address 1 *" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Height="29" Width="125"/>
-        <Label x:Name="Label_Email" Content="Email *" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" Height="29" Width="125"/>
-        <Label x:Name="Label_City" Content="City *" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="29" Width="125" Grid.Column="1"/>
-        <Label x:Name="Label_Country" Content="Country" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Height="29" Width="125" Grid.Column="1"/>
-        <Label x:Name="Label_Zone" Content="Zone" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Height="29" Width="125" Grid.Column="1"/>
-        <Label x:Name="Label_Post_Code" Content="Post Code" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Height="29" Width="125" Grid.Column="1"/>
-        <Label x:Name="Label_Sales_Representative" Content="Sales Representative" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Height="29" Width="125" Grid.Column="1"/>
-        <Label x:Name="label_Required_Field" Content="(*) Required field" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Width="125" Grid.Column="1"/>
 
-        <Button x:Name="Button_Search" Height="20" Width="100" Margin="140,225,145,259" Grid.Column="1" Click="Button_Search_Click" Content="Save"/>
-        <Button x:Name="Button_Show_List" Height="20" Width="100" Margin="148,265,152,219" Grid.Column="1" Click="Button_Show_List_Click" Content="Show List"/>
-        <Button x:Name="Button_Back" Height="20" Width="100" Margin="10,10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Button_Back_Click" Content="Back"/>
-    </Grid>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="textBox_Company_Name" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="1" />
+            <TextBox x:Name="textBox_Contact_Last_Name" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="2"/>
+            <TextBox x:Name="textBox_Contact_First_Name" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="3"/>
+            <TextBox x:Name="textBox_Telephone" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="4"/>
+            <TextBox x:Name="textBox_Address1" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="5"/>
+            <TextBox x:Name="textBox_Address2" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="6"/>
+            <TextBox x:Name="textBox_City" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="7"/>
+            <TextBox x:Name="textBox_Country" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="8"/>
+            <TextBox x:Name="textBox_Zone" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="9"/>
+            <TextBox x:Name="textBox_Post_Code" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="10"/>
+            <TextBox x:Name="textBox_Sales_Representative" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="11"/>
+
+            <Label x:Name="Label_Company_Name" Content="Company name *" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="1"/>
+            <Label x:Name="Label_Contact_Last_Name" Content="Contact last name" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="2"/>
+            <Label x:Name="Label_Contact_First_Name" Content="Contact first name" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="3"/>
+            <Label x:Name="Label_Telephone" Content="Telephone *" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="4"/>
+            <Label x:Name="Label_Address_1" Content="Address 1 *" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="5"/>
+            <Label x:Name="Label_Email" Content="Email *" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="6"/>
+            <Label x:Name="Label_City" Content="City *" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="7"/>
+            <Label x:Name="Label_Country" Content="Country" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="8"/>
+            <Label x:Name="Label_Zone" Content="Zone" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="9"/>
+            <Label x:Name="Label_Post_Code" Content="Post Code" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="10"/>
+            <Label x:Name="Label_Sales_Representative" Content="Sales Representative" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="11"/>
+            <Label x:Name="label_Required_Field" Content="(*) Required field" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="12"/>
+
+            <Button x:Name="Button_Save" Style="{StaticResource NormalButtons}" Click="Button_Save_Click" Content="Save"
+                Grid.Column="1" Grid.Row="13"/>
+            <Button x:Name="Button_Show_List" Style="{StaticResource NormalButtons}" Click="Button_Show_List_Click" Content="Show List"
+                Grid.Column="2" Grid.Row="13"/>
+            <Button x:Name="Button_Back" Style="{StaticResource NormalButtons}" Click="Button_Back_Click" Content="Back"
+                Grid.Column="1" Grid.Row="14"/>
+        </Grid>
+    </ScrollViewer>
 </Page>

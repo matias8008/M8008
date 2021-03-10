@@ -4,9 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
-    
-    <StackPanel Background="White">
 
+    <StackPanel Background="White">
         <TextBlock FontSize="20" HorizontalAlignment="Center" 
                    Foreground="DarkBlue" Text="M8008"/>
 
@@ -21,7 +20,7 @@
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="20"></ColumnDefinition>
-             </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"></RowDefinition>
@@ -33,9 +32,7 @@
                 <RowDefinition Height="20"></RowDefinition>
             </Grid.RowDefinitions>
 
-
-
-            <Button x:Name="PresentationButton_Employee" Click="GoToEmployeeForm"
+            <Button x:Name="Button_Employee" Click="GoToEmployeeForm"
                         Grid.Column="2" Grid.Row="2" FontSize="20" 
                         Height="150" Width="150" Background="#FF55EFC4">
                 <StackPanel>
@@ -43,8 +40,8 @@
                     <Image Source="005-fight.png" Opacity="1" Margin="5" Width="100">
                     </Image>
                 </StackPanel>
-             </Button>
-            <Button x:Name="PresentationButton_Person" Click="PresentationButton_Person_Click"
+            </Button>
+            <Button x:Name="Button_Person" Click="Button_Person_Click"
                         Grid.Column="3" Grid.Row="2" FontSize="20"
                         Height="150" Width="150" Background="#FF00B894">
                 <StackPanel>
@@ -53,7 +50,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-            <Button x:Name="PresentationButton_Products" Click="PresentationButton_Products_Click"
+            <Button x:Name="Button_Products" Click="Button_Products_Click"
                         Grid.Column="4" Grid.Row="2" FontSize="20"
                         Height="150" Width="150" Background="#FFFFEAA7">
                 <StackPanel>
@@ -62,7 +59,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-            <Button x:Name="PresentationButton_Sales" Click="PresentationButton_Sales_Click"
+            <Button x:Name="Button_Sales" Click="Button_Sales_Click"
                         Grid.Column="2" Grid.Row="3" FontSize="20"
                         Height="150" Width="150" Background="#FF81ECEC">
                 <StackPanel>
@@ -71,7 +68,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-            <Button x:Name="PresentationButton_Providers" Click="PresentationButton_Providers_Click"
+            <Button x:Name="Button_Providers" Click="Button_Providers_Click"
                         Grid.Column="3" Grid.Row="3" FontSize="20"
                         Height="150" Width="150" Background="#FF00CEC9">
                 <StackPanel>
@@ -80,7 +77,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-            <Button x:Name="PresentationButton_Clients" Click="PresentationButton_Clients_Click"
+            <Button x:Name="Button_Clients" Click="Button_Clients_Click"
                         Grid.Column="4" Grid.Row="3" FontSize="20"
                         Height="150" Width="150" Background="#FFFAB1A0">
                 <StackPanel>
@@ -98,7 +95,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-            <Button x:Name="Button_Back_Button" Click="Button_Back_Button_Click"
+            <Button x:Name="Button_Back" Click="Button_Back_Click"
                         Grid.Column="3" Grid.Row="4" FontSize="20"
                         Height="150" Width="150" Background="#FF0984E3">
                 <StackPanel>
@@ -107,7 +104,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-            <Button x:Name="Button_Change_User" Click="Button_Change_User_Click"
+            <Button x:Name="Button_ChangeUser" Click="Button_ChangeUser_Click"
                         Grid.Column="4" Grid.Row="4" FontSize="20"
                         Height="150" Width="150" Background="#FFFF7675">
                 <StackPanel>
@@ -116,10 +113,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-
         </Grid>
-
     </StackPanel>
-       
 </Page>
 

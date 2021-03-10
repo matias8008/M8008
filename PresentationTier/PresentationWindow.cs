@@ -32,43 +32,43 @@ namespace PresentationTier
             this.NavigationService.Navigate(insertEmployee);
         }
 
-        private void PresentationButton_Person_Click(object sender, RoutedEventArgs e)
+        private void Button_Person_Click(object sender, RoutedEventArgs e)
         {
             FormInPerson formInPerson = new FormInPerson();
             this.NavigationService.Navigate(formInPerson);
         }
 
-        private void PresentationButton_Products_Click(object sender, RoutedEventArgs e)
+        private void Button_Products_Click(object sender, RoutedEventArgs e)
         {
             Products products = new Products();
             this.NavigationService.Navigate(products);
         }
 
-        private void PresentationButton_Sales_Click(object sender, RoutedEventArgs e)
+        private void Button_Sales_Click(object sender, RoutedEventArgs e)
         {
             Sales sales = new Sales();
             this.NavigationService.Navigate(sales);
         }
 
-        private void PresentationButton_Providers_Click(object sender, RoutedEventArgs e)
+        private void Button_Providers_Click(object sender, RoutedEventArgs e)
         {
             Purchase purchase = new Purchase();
             this.NavigationService.Navigate(purchase);
         }
 
-        private void PresentationButton_Clients_Click(object sender, RoutedEventArgs e)
+        private void Button_Clients_Click(object sender, RoutedEventArgs e)
         {
             Clients clients = new Clients();
             this.NavigationService.Navigate(clients);
         }
 
-        private void Button_Back_Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
             Login login = new Login();
             this.NavigationService.Navigate(login);
         }
 
-        private void Button_Change_User_Click(object sender, RoutedEventArgs e)
+        private void Button_ChangeUser_Click(object sender, RoutedEventArgs e)
         {
             Login login = new Login();
             this.NavigationService.Navigate(login);

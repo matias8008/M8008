@@ -7,6 +7,59 @@
         mc:Ignorable="d"
         Title="Purchase" Height="450" Width="800">
     <Grid>
-        <TextBlock>HOLA</TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="SUPLIERS" Style="{StaticResource NormalLabel}"
+               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" />
+
+        <TextBlock Text="Nombre" Style="{StaticResource NormalTextBlock}" 
+                   Grid.Column="1" Grid.Row="2" />
+        <TextBlock Text="Contact name" Style="{StaticResource NormalTextBlock}" 
+                   Grid.Column="1" Grid.Row="3" />
+        <TextBlock Text="Telephone" Style="{StaticResource NormalTextBlock}" 
+                   Grid.Column="1" Grid.Row="4" />
+        <TextBlock Text="Address" Style="{StaticResource NormalTextBlock}" 
+                   Grid.Column="1" Grid.Row="5" />
+        <TextBlock Text="Email" Style="{StaticResource NormalTextBlock}" 
+                   Grid.Column="1" Grid.Row="6" />
+
+        <TextBox x:Name="TextBoxName"
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="2"/>
+        <TextBox x:Name="TextBoxContactName"
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="3"/>
+        <TextBox x:Name="TextBoxTelephone"
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="4"/>
+        <TextBox x:Name="TextBoxAddress"
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="5"/>
+        <TextBox x:Name="TextBoxEmail"
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="6"/>
+
+        <Button x:Name="buttoInsert" Content="Insert"
+                Style="{StaticResource NormalButtons}" Grid.Column="1" Grid.Row="7"/>
+        <Button x:Name="buttonShowList" Content="Show List" 
+                Style="{StaticResource NormalButtons}" Grid.Column="1" Grid.Row="8"/>
+        <Button x:Name="button_Back" Content="Back"
+                Style="{StaticResource NormalButtons}" Grid.Column="1" Grid.Row="9"/>
     </Grid>
 </Page>

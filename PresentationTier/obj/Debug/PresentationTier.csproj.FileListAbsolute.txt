@@ -138,7 +138,6 @@ C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Login.g.cs
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentData.g.cs
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentationWindow.g.cs
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Purchase.g.cs
-C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Sales.g.cs
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\SearchProduct.g.cs
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\MainWindow.g.cs
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\App.g.cs
@@ -150,7 +149,6 @@ C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\InsertEmpl
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Login.baml
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentData.baml
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Purchase.baml
-C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Sales.baml
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\SearchProduct.baml
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\MainWindow.baml
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentationTier.g.resources
@@ -161,3 +159,5 @@ C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Presentati
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentationTier.exe
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\PresentationTier.pdb
 C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\App.baml
+C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Orders.g.cs
+C:\Users\matias8008\source\repos\ProjectV1\PresentationTier\obj\Debug\Orders.baml

@@ -18,6 +18,7 @@
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="20"></ColumnDefinition>
             </Grid.ColumnDefinitions>
@@ -113,6 +114,9 @@
                     </Image>
                 </StackPanel>
             </Button>
+            <TextBlock Text="Icons made by: https://www.flaticon.com/authors/photo3idea-studio"
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="5" 
+                       Grid.ColumnSpan="3"/>
         </Grid>
     </StackPanel>
 </Page>

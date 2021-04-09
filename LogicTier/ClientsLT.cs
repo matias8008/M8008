@@ -10,10 +10,10 @@ using System.Data;
 
 namespace LogicTier
 {
-    public class ClientsLogicTier
+    public class ClientsLT
     {
 
-        //Atributes
+        //Attributes
         static public String ClientCode { get; set; }
         public String ClientName { get; set; }
         public String ClientContactLastName { get; set; }

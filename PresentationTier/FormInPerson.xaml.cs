@@ -62,6 +62,10 @@ namespace PresentationTier
             gender = 'O';
         }
 
+        private void textbox_address(object sender, TextChangedEventArgs e)
+        {
+
+        }
         private void Button_InsertData_Click(object sender, RoutedEventArgs e)
         {
             String message; 
@@ -97,5 +101,7 @@ namespace PresentationTier
             PresentationWindow presentationWindow = new PresentationWindow();
             this.NavigationService.Navigate(presentationWindow);
         }
+
+
     }
 }

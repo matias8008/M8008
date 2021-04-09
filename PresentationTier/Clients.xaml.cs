@@ -22,7 +22,7 @@ namespace PresentationTier
     /// </summary>
     public partial class Clients : Page
     {
-        ClientsLogicTier clientsLogicTier = new ClientsLogicTier();
+        ClientsLT clientsLogicTier = new ClientsLT();
         //String clientCode;
 
         public Clients()

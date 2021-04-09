@@ -3,45 +3,87 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="400"
-        Background="AntiqueWhite">
+        mc:Ignorable="d">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
         
-        <TextBox x:Name="ProductCodeTextBox" HorizontalAlignment="Left" Height="23" Margin="25,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="ProductCodeTextBox__TextChanged" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="ProductNameTextBox" HorizontalAlignment="Left" Height="23" Margin="25,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="ProductNameTextBox_TextChanged" Grid.ColumnSpan="2"/>
-        <ComboBox x:Name="CategorieComboBox" HorizontalAlignment="Left" Height="23" Margin="25,140,0,0" Text="" VerticalAlignment="Top" Width="120" SelectionChanged="CategorieComboBox_SelectionChanged" Grid.ColumnSpan="2">
-            <ComboBoxItem x:Name="_1" Content="" HorizontalAlignment="Left" Width="118"/>
+        
+       
+
+        <Label Content="INSERT PRODUCTS" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" />
+        
+        <TextBlock Text="Product name" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="2" />
+        <TextBlock Text="Product code" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="3" />
+        <TextBlock Text="Categorie" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="4"/>
+        <TextBlock Text="Dimentions" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="5"/>
+        <TextBlock Text="Product Suplier" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="6"/>
+        <TextBlock Text="Description" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="7"/>
+        <TextBlock Text="Stock" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="8"/>
+        <TextBlock Text="Sale price" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="9"/>
+        <TextBlock Text="Buy price" Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="10"/>
+
+        <TextBox x:Name="productNameTextBox" TextChanged="ProductNameTextBox_TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="2" />
+        <TextBox x:Name="productCodeTextBox" TextChanged="ProductCodeTextBox__TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="3" />
+        
+        <ComboBox x:Name="categorieComboBox" SelectionChanged="CategorieComboBox_SelectionChanged" Grid.Column="2" 
+                  Grid.Row="4" Height=" 30" Margin="5">
+            <ComboBoxItem x:Name="_1" Content="" HorizontalAlignment="Left" Width="118" Margin="5"/>
             <ComboBoxItem x:Name="_2" Content="" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="_3" Content="" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="_4" Content="" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <TextBox x:Name="DimentionsTextBox" HorizontalAlignment="Left" Height="23" Margin="25,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="DimentionsTextBox_TextChanged" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="ProductProviderTextBox" HorizontalAlignment="Left" Height="23" Margin="25,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="SuplierTextBox_TextChanged" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Height="23" Margin="25,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="DescriptionTextBox_TextChanged" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="StockTextBox" HorizontalAlignment="Left" Height="23" Margin="25,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="StockTextBox_TextChanged" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="SalePriceTextBox" HorizontalAlignment="Left" Height="23" Margin="25,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="SellPriceTextBox_TextChanged" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="InsertProductTextBlock" HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="INSERT PRODUCTS" VerticalAlignment="Top" Height="50" Width="300" TextAlignment="Center" FontWeight="Bold" FontSize="25" Grid.ColumnSpan="2" />
-        <TextBox x:Name="BuyPriceTextBox" HorizontalAlignment="Left" Height="23" Margin="25,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="BuyPriceTextBox_TextChanged" Grid.ColumnSpan="2" />
-        <TextBlock x:Name="textBlock_BuyPrice_alert" HorizontalAlignment="Left" Margin="196,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="0"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="20,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"><Run Text="Product name"/><Run Text=" *"/></TextBlock>
-        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="20,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90" Text="Categorie"/>
-        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="20,180,0,0" TextWrapping="Wrap" Text="Dimentions" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"/>
-        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="20,220,0,0" TextWrapping="Wrap" Text="Product Suplier" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"/>
-        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="20,260,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"/>
-        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="20,300,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"/>
-        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="20,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"><Run Text="Sale price"/><Run Text=" *"/></TextBlock>
-        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="20,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"><Run Text="Buy price"/><Run Text=" *"/></TextBlock>
-        <TextBlock x:Name="messageTextBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="120,420,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontWeight="Bold" Height="16" Width="200"/>
+        
+        <TextBox x:Name="dimentionsTextBox" TextChanged="DimentionsTextBox_TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="5"/>
+        <TextBox x:Name="productProviderTextBox" TextChanged="SuplierTextBox_TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="6"/>
+        <TextBox x:Name="descriptionTextBox" TextChanged="DescriptionTextBox_TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="7"/>
+        <TextBox x:Name="stockTextBox" TextChanged="StockTextBox_TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="8"/>
+        <TextBox x:Name="salePriceTextBox" TextChanged="SellPriceTextBox_TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="9"/>
+        <TextBox x:Name="buyPriceTextBox" TextChanged="BuyPriceTextBox_TextChanged" 
+                 Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="10" />
+        
+        <Button x:Name="buttonInsertProduct" Content="Insert" Click="ButtonInsertProduct_Click" 
+                Style="{StaticResource NormalButtons}" Grid.Column="1" Grid.Row="11"/>
+        <Button x:Name="button_Show_List" Content="Show List" 
+                Style="{StaticResource NormalButtons}" Grid.Column="1" Grid.Row="12"/>
+        <Button x:Name="button_Back" Content="Back" Click="Button_Back_Click" 
+                Style="{StaticResource NormalButtons}" Grid.Column="1" Grid.Row="13"/>
 
-        <TextBlock x:Name="textBlock_SalePrice_alert" HorizontalAlignment="Left" Margin="196,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="0"/>
-        <TextBlock x:Name="textBlock_Stock_alert" HorizontalAlignment="Left" Margin="196,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="0"/>
-        <TextBlock x:Name="textBlock_Product_Code" HorizontalAlignment="Left" Margin="20,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="90"><Run Text="Product "/><Run Text="code"/><Run Text=" *"/></TextBlock>
-        <Button x:Name="buttonInsertProduct" Content="Insert" HorizontalAlignment="Left" Margin="25,0,0,60" VerticalAlignment="Bottom" Width="100" Click="ButtonInsertProduct_Click" Height="20"/>
-        <Button x:Name="Button_Show_List" Content="Show List" Margin="2,424,472,60" Height="20" Grid.Column="2"/>
-        <Button x:Name="Button_Back" Height="20" Width="100" Margin="26,458,0,26" HorizontalAlignment="Left" Content="Back" Click="Button_Back_Click"/>
+        <TextBlock x:Name="messageTextBlock" Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="11"/>
+        <TextBlock x:Name="textBlock_SalePrice_alert" Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="12"/>
+        <TextBlock x:Name="textBlock_Stock_alert" Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="13"/>
+        <TextBlock x:Name="textBlock_BuyPrice_alert" Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="14"/>
     </Grid>
 </Page>

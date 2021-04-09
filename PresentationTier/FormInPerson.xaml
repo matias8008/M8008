@@ -13,12 +13,13 @@
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="20" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -30,25 +31,32 @@
             
 
         </Grid.RowDefinitions>
-        <!--
-        <RadioButton x:Name="radioButton_Male" GroupName="Gender" Content="Male" Checked="RadioButton_Male_Checked" Grid.Column="1"/>
-        <RadioButton x:Name="radioButton_Female" GroupName="Gender" Content="Female" Checked="RadioButton_Female_Checked"/>
-        <RadioButton x:Name="radioButton_Other" GroupName="Gender" Content="Other" Checked="RadioButton_Other_Checked"/>
-        -->
+        <StackPanel Grid.Column="2" Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center">
+            <RadioButton x:Name="radioButton_Male" GroupName="Gender" 
+                         Content="Male" Checked="RadioButton_Male_Checked" 
+                         Margin="5"/>
+            <RadioButton x:Name="radioButton_Female" GroupName="Gender" 
+                         Content="Female" Checked="RadioButton_Female_Checked"
+                         Margin="5"/>
+            <RadioButton x:Name="radioButton_Other" GroupName="Gender" 
+                         Content="Other" Checked="RadioButton_Other_Checked"
+                         Margin="5"/>
 
+        </StackPanel>
         
-
         <TextBlock Margin="5" Grid.Column="1" Grid.Row="2" Text="Personal id"/>
         <TextBlock Margin="5" Grid.Column="1" Grid.Row="3" Text="First Name"/>
         <TextBlock Margin="5" Grid.Column="1" Grid.Row="4" Text="Last Name"/>
         <TextBlock Text="Address" Margin="5" Grid.Column="1" Grid.Row="5"/>
         <TextBlock Margin="5" Grid.Column="1" Grid.Row="6" Text="Date of birth"/>
+        <TextBlock Margin="5" Grid.Column="1" Grid.Row="7" Text="Gender" />
 
-        <TextBlock Margin="5" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Text="INSERT DATA FORM" FontSize="36"/>
-        <TextBox x:Name="textBox_Id_Personal" Margin="5" Grid.Column="2" Grid.Row="2" Width="200" TextChanged="TextBox_Id_Personal_TextChanged" />
-        <TextBox x:Name="textBox_FirstName" Margin="5" Grid.Column="2" Grid.Row="3" Width="200" TextChanged="TextBox_FirstName_TextChanged" />
-        <TextBox x:Name="textBox_LastName" Margin="5" Grid.Column="2" Grid.Row="4" Width="200" TextChanged="TextBox_LastName_TextChanged" />
-        <TextBox x:Name="textBox_PAddress" Margin="5" Grid.Column="2" Grid.Row="5" Width="200"/>
+        <TextBlock Margin="5" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" 
+                   Text="INSERT DATA FORM" FontSize="36"/>
+        <TextBox x:Name="textBox_Id_Personal" Margin="5" Grid.Column="2" Grid.Row="2" TextChanged="TextBox_Id_Personal_TextChanged" />
+        <TextBox x:Name="textBox_FirstName" Margin="5" Grid.Column="2" Grid.Row="3" TextChanged="TextBox_FirstName_TextChanged" />
+        <TextBox x:Name="textBox_LastName" Margin="5" Grid.Column="2" Grid.Row="4" TextChanged="TextBox_LastName_TextChanged" />
+        <TextBox x:Name="textBox_PAddress" Margin="5" Grid.Column="2" Grid.Row="5" TextChanged="textbox_address" />
         <DatePicker x:Name="datePicker_DateOfBirth" Grid.Column="2" Grid.Row="6" Margin="5,5,5,5" Width="200"/>
         
         <TextBlock x:Name="textBlock_Message" TextWrapping="Wrap" Text="" Grid.Column="3" Grid.Row="2" Margin="5,5,5,5"/>

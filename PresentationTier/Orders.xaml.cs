@@ -24,7 +24,13 @@ namespace PresentationTier
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void show_list(object sender, RoutedEventArgs e)
+        {
+            //PresentData presentData = new PresentData();
+
+        }
+
+        private void insert_data(object sender, RoutedEventArgs e)
         {
 
         }

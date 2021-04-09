@@ -87,43 +87,43 @@ namespace PresentationTier
 
             try
             {
-                products.ProductCode = ProductCodeTextBox.Text;
-                products.ProductName = ProductNameTextBox.Text;
+                products.ProductCode = productCodeTextBox.Text;
+                products.ProductName = productNameTextBox.Text;
                
-                if (CategorieComboBox.SelectedItem == _1)
+                if (categorieComboBox.SelectedItem == _1)
                     products.Categorie = 1;
-                if (CategorieComboBox.SelectedItem == _2)
+                if (categorieComboBox.SelectedItem == _2)
                     products.Categorie = 2;
-                if (CategorieComboBox.SelectedItem == _3)
+                if (categorieComboBox.SelectedItem == _3)
                     products.Categorie = 3;
-                if (CategorieComboBox.SelectedItem == _4)
+                if (categorieComboBox.SelectedItem == _4)
                     products.Categorie = 4;
 
-                products.Dimentions = DimentionsTextBox.Text;
-                products.ProductProvider = ProductProviderTextBox.Text;
-                products.ProductDescription = DescriptionTextBox.Text;
+                products.Dimentions = dimentionsTextBox.Text;
+                products.ProductProvider = productProviderTextBox.Text;
+                products.ProductDescription = descriptionTextBox.Text;
 
                 //To avoid DDBB exceptions
                 int number1 = 0;
-                bool canConvert = int.TryParse(StockTextBox.Text, out number1);
+                bool canConvert = int.TryParse(stockTextBox.Text, out number1);
                 if (canConvert == true)
-                    products.Stock = int.Parse(StockTextBox.Text);
+                    products.Stock = int.Parse(stockTextBox.Text);
                 else
                     textBlock_Stock_alert.Text="Only integer numbers";
 
                 Double number2 = 0.0;
-                bool canConvert2 = Double.TryParse(SalePriceTextBox.Text, out number2);
+                bool canConvert2 = Double.TryParse(salePriceTextBox.Text, out number2);
                 if (canConvert == true)
-                    products.SalePrice = Double.Parse(SalePriceTextBox.Text);
+                    products.SalePrice = Double.Parse(salePriceTextBox.Text);
                 else
                     textBlock_Stock_alert.Text = "Only numbers";
 
-                bool canConvert3 = Double.TryParse(SalePriceTextBox.Text, out number2);
+                bool canConvert3 = Double.TryParse(salePriceTextBox.Text, out number2);
                 if (canConvert == true)
-                    products.BuyPrice = Double.Parse(BuyPriceTextBox.Text);
+                    products.BuyPrice = Double.Parse(buyPriceTextBox.Text);
                 else
                     textBlock_Stock_alert.Text = "Only numbers";
-                products.BuyPrice = Double.Parse(BuyPriceTextBox.Text);
+                products.BuyPrice = Double.Parse(buyPriceTextBox.Text);
 
                 //Calling Procedure DDBB Register_Products
                 message = products.RegisterProducts();

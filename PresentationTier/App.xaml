@@ -15,12 +15,15 @@
             <Style x:Key="NormalTextBox" TargetType="TextBox">
                 <Setter Property="Width" Value="200" />
                 <Setter Property="Margin" Value="5" />
-                <Setter Property="Height" Value="20"/>
+                <Setter Property="Height" Value="30"/>
             </Style>
 
             <Style x:Key="NormalLabel" TargetType="Label">
-                <Setter Property="Width" Value="150" />
-                <Setter Property="Height" Value="30"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+
+            <Style x:Key="NormalTextBlock" TargetType="TextBlock">
                 <Setter Property="Margin" Value="5"/>
                 <Setter Property="FontSize" Value="12"/>
             </Style>

@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientsLogicTier.cs" />
+    <Compile Include="ClientsLT.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="OrdersLT.cs" />
     <Compile Include="Persons.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

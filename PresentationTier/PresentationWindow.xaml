@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
 
-    <StackPanel Background="White">
+    <StackPanel Background="Black">
         <TextBlock FontSize="20" HorizontalAlignment="Center" 
-                   Foreground="DarkBlue" Text="M8008"/>
+                   Foreground="Yellow" Text="M8008"/>
 
-        <TextBlock Text="MAIN MENU" Margin="10" FontSize="30"
+        <Label Content="MAIN MENU" Style="{StaticResource NormalLabel}"
                    HorizontalAlignment="Center"/>
         <Grid>
             <Grid.ColumnDefinitions>

@@ -6,24 +6,30 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="NormalButtons" TargetType="Button">
-                <Setter Property="Background" Value="Azure"/>
-                <Setter Property="Width" Value="150"/>
+                <Setter Property="Background" Value="Yellow"/>
+                <Setter Property="ContentStringFormat" Value="Black"/>
+                <Setter Property="Width" Value="130"/>
                 <Setter Property="Height" Value="20"/>
                 <Setter Property="Margin" Value="5"/>
             </Style>
 
             <Style x:Key="NormalTextBox" TargetType="TextBox">
+                <Setter Property="Background" Value="Yellow"/>
                 <Setter Property="Width" Value="200" />
                 <Setter Property="Margin" Value="5" />
                 <Setter Property="Height" Value="30"/>
             </Style>
 
             <Style x:Key="NormalLabel" TargetType="Label">
+                <Setter Property="Background" Value="Black"/>
+                <Setter Property="Foreground" Value="Yellow"/>
                 <Setter Property="Margin" Value="5"/>
                 <Setter Property="FontSize" Value="30"/>
             </Style>
 
             <Style x:Key="NormalTextBlock" TargetType="TextBlock">
+                <Setter Property="Background" Value="Black"/>
+                <Setter Property= "Foreground" Value="Yellow" />
                 <Setter Property="Margin" Value="5"/>
                 <Setter Property="FontSize" Value="12"/>
             </Style>

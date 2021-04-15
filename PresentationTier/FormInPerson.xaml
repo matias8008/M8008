@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="Person Input Form">
     
-    <Grid>
+    <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
@@ -19,6 +20,7 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -31,39 +33,70 @@
             
 
         </Grid.RowDefinitions>
-        <StackPanel Grid.Column="2" Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center">
+        
+        <Label Content="INSERT DATA FORM"
+               Style="{StaticResource NormalLabel}"
+            Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <StackPanel Grid.Column="3" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
             <RadioButton x:Name="radioButton_Male" GroupName="Gender" 
                          Content="Male" Checked="RadioButton_Male_Checked" 
-                         Margin="5"/>
+                         Background="Yellow" Foreground="Yellow" Margin="5"/>
             <RadioButton x:Name="radioButton_Female" GroupName="Gender" 
                          Content="Female" Checked="RadioButton_Female_Checked"
-                         Margin="5"/>
+                         Background="Yellow" Foreground="Yellow" Margin="5"/>
             <RadioButton x:Name="radioButton_Other" GroupName="Gender" 
                          Content="Other" Checked="RadioButton_Other_Checked"
-                         Margin="5"/>
+                         Background="Yellow" Foreground="Yellow" Margin="5"/>
 
         </StackPanel>
         
-        <TextBlock Margin="5" Grid.Column="1" Grid.Row="2" Text="Personal id"/>
-        <TextBlock Margin="5" Grid.Column="1" Grid.Row="3" Text="First Name"/>
-        <TextBlock Margin="5" Grid.Column="1" Grid.Row="4" Text="Last Name"/>
-        <TextBlock Text="Address" Margin="5" Grid.Column="1" Grid.Row="5"/>
-        <TextBlock Margin="5" Grid.Column="1" Grid.Row="6" Text="Date of birth"/>
-        <TextBlock Margin="5" Grid.Column="1" Grid.Row="7" Text="Gender" />
+        <TextBlock Text="Personal id" 
+                   Style="{StaticResource NormalTextBlock}"
+                   Grid.Column="2" Grid.Row="3"/>
+        <TextBlock Text="First Name" 
+                   Style="{StaticResource NormalTextBlock}"
+                   Grid.Column="2" Grid.Row="4"/>
+        <TextBlock Text="Last Name" 
+                   Style="{StaticResource NormalTextBlock}"
+                   Grid.Column="2" Grid.Row="5"/>
+        <TextBlock Text="Address" 
+                   Style="{StaticResource NormalTextBlock}"
+                   Grid.Column="2" Grid.Row="6"/>
+        <TextBlock Text="Date of birth" 
+                   Style="{StaticResource NormalTextBlock}"
+                   Grid.Column="2" Grid.Row="7" />
+        <TextBlock Text="Gender" 
+                   Style="{StaticResource NormalTextBlock}"
+                   Grid.Column="2" Grid.Row="8"  />
 
-        <TextBlock Margin="5" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" 
-                   Text="INSERT DATA FORM" FontSize="36"/>
-        <TextBox x:Name="textBox_Id_Personal" Margin="5" Grid.Column="2" Grid.Row="2" TextChanged="TextBox_Id_Personal_TextChanged" />
-        <TextBox x:Name="textBox_FirstName" Margin="5" Grid.Column="2" Grid.Row="3" TextChanged="TextBox_FirstName_TextChanged" />
-        <TextBox x:Name="textBox_LastName" Margin="5" Grid.Column="2" Grid.Row="4" TextChanged="TextBox_LastName_TextChanged" />
-        <TextBox x:Name="textBox_PAddress" Margin="5" Grid.Column="2" Grid.Row="5" TextChanged="textbox_address" />
-        <DatePicker x:Name="datePicker_DateOfBirth" Grid.Column="2" Grid.Row="6" Margin="5,5,5,5" Width="200"/>
+        
+        <TextBox x:Name="textBox_Id_Personal"
+                 Style="{StaticResource NormalTextBox}"
+                 Grid.Column="3" Grid.Row="3" TextChanged="TextBox_Id_Personal_TextChanged" />
+        <TextBox x:Name="textBox_FirstName"
+                 Style="{StaticResource NormalTextBox}"
+                 Grid.Column="3" Grid.Row="3" TextChanged="TextBox_FirstName_TextChanged" />
+        <TextBox x:Name="textBox_LastName"
+                 Style="{StaticResource NormalTextBox}"
+                 Grid.Column="3" Grid.Row="4" TextChanged="TextBox_LastName_TextChanged" />
+        <TextBox x:Name="textBox_PAddress"
+                 Style="{StaticResource NormalTextBox}"
+                 Grid.Column="3" Grid.Row="5" TextChanged="textbox_address" />
+        <DatePicker x:Name="datePicker_DateOfBirth" 
+                    Background="Yellow"
+                    Grid.Column="3" Grid.Row="6" Margin="5" Width="200"/>
         
         <TextBlock x:Name="textBlock_Message" TextWrapping="Wrap" Text="" Grid.Column="3" Grid.Row="2" Margin="5,5,5,5"/>
 
-        <Button x:Name="button_InsertData" Content="Insert data" Grid.Column="3" Grid.Row="3" Margin="5,5,5,5" Width="100" Click="Button_InsertData_Click"/>
-        <Button x:Name="button_PersonList" Content="Show list" Grid.Column="3" Grid.Row="4" Margin="5,5,5,5" Width="100" Click="Button_PersonList_Click"/>
-        <Button x:Name="Button_Back"   Content="Back" Grid.Column="3" Grid.Row="5" Margin="5,5,5,5" Width="100" Click="Button_Back_Click"/>
+        <Button x:Name="button_InsertData" Content="Insert data"
+                Style="{StaticResource NormalButtons}"
+                Grid.Column="4" Grid.Row="4" Click="Button_InsertData_Click"/>
+        <Button x:Name="button_PersonList" Content="Show list" 
+                Style="{StaticResource NormalButtons}"
+                Grid.Column="4" Grid.Row="5" Click="Button_PersonList_Click"/>
+        <Button x:Name="Button_Back" Content="Back" 
+                Style="{StaticResource NormalButtons}"
+                Grid.Column="4" Grid.Row="6" Click="Button_Back_Click"/>
 
     </Grid>
 </Page>

@@ -7,83 +7,97 @@
         mc:Ignorable="d"
         Title="Clients">
 
-    <ScrollViewer>
-        <Grid>
+        <Grid Background="Black">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20"/>
-                <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="20"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="20" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="20" /> 
             </Grid.RowDefinitions>
 
-            <Label Content="CLIENTS" Style="{StaticResource NormalLabel}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" />
-            
-            <TextBox x:Name="textBox_Company_Name" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="2" />
-            <TextBox x:Name="textBox_Contact_Last_Name" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="3"/>
-            <TextBox x:Name="textBox_Contact_First_Name" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="4"/>
-            <TextBox x:Name="textBox_Telephone" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="5"/>
-            <TextBox x:Name="textBox_Address1" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="6"/>
-            <TextBox x:Name="textBox_Address2" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="7"/>
-            <TextBox x:Name="textBox_City" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="8"/>
-            <TextBox x:Name="textBox_Country" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="9"/>
-            <TextBox x:Name="textBox_Zone" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="10"/>
-            <TextBox x:Name="textBox_Post_Code" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="11"/>
-            <TextBox x:Name="textBox_Sales_Representative" Style="{StaticResource NormalTextBox}" Grid.Column="2" Grid.Row="12"/>
+            <Label Content="CLIENTS" Style="{StaticResource NormalLabel}" 
+                   Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center"/>
+
+            <TextBox x:Name="textBox_Company_Name" Style="{StaticResource NormalTextBox}" 
+                     Grid.Column="3" Grid.Row="3" />
+            <TextBox x:Name="textBox_Contact_Last_Name" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="4"/>
+            <TextBox x:Name="textBox_Contact_First_Name" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="5"/>
+            <TextBox x:Name="textBox_Telephone" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="6"/>
+            <TextBox x:Name="textBox_Address1" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="7"/>
+            <TextBox x:Name="textBox_Address2" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="8"/>
+            <TextBox x:Name="textBox_City" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="9"/>
+            <TextBox x:Name="textBox_Country" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="10"/>
+            <TextBox x:Name="textBox_Zone" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="11"/>
+            <TextBox x:Name="textBox_Post_Code" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="12"/>
+            <TextBox x:Name="textBox_Sales_Representative" Style="{StaticResource NormalTextBox}"
+                     Grid.Column="3" Grid.Row="13"/>
 
             <TextBlock x:Name="Label_Company_Name" Text="Company name *" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="2"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="3"/>
             <TextBlock x:Name="Label_Contact_Last_Name" Text="Contact last name" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="3"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="4"/>
             <TextBlock x:Name="Label_Contact_First_Name" Text="Contact first name" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="4"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="5"/>
             <TextBlock x:Name="Label_Telephone" Text="Telephone *" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="5"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="6"/>
             <TextBlock x:Name="Label_Address_1" Text="Address 1 *" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="6"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="7"/>
             <TextBlock x:Name="Label_Email" Text="Email *" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="7"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="8"/>
             <TextBlock x:Name="Label_City" Text="City *" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="8"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="9"/>
             <TextBlock x:Name="Label_Country" Text="Country" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="9"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="10"/>
             <TextBlock x:Name="Label_Zone" Text="Zone" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="10"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="11"/>
             <TextBlock x:Name="Label_Post_Code" Text="Post Code" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="11"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="12"/>
             <TextBlock x:Name="Label_Sales_Representative" Text="Sales Representative" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="12"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="13"/>
             <TextBlock x:Name="label_Required_Field" Text="(*) Required field" 
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="13"/>
+                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="14"/>
 
             <Button x:Name="Button_Save" Style="{StaticResource NormalButtons}" Click="Button_Save_Click" Content="Save"
-                Grid.Column="1" Grid.Row="14"/>
+                Grid.Column="2" Grid.Row="15"/>
             <Button x:Name="Button_Show_List" Style="{StaticResource NormalButtons}" Click="Button_Show_List_Click" Content="Show List"
-                Grid.Column="2" Grid.Row="14"/>
+                Grid.Column="3" Grid.Row="15"/>
             <Button x:Name="Button_Back" Style="{StaticResource NormalButtons}" Click="Button_Back_Click" Content="Back"
-                Grid.Column="1" Grid.Row="15"/>
+                Grid.Column="2" Grid.Row="16"/>
         </Grid>
-    </ScrollViewer>
 </Page>

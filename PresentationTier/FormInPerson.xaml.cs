@@ -72,7 +72,6 @@ namespace PresentationTier
             
             try
             {
-
                 persons.Id_Personal = textBox_Id_Personal.Text;
                 persons.LastName = textBox_LastName.Text;
                 persons.FirstName = textBox_FirstName.Text;
@@ -86,6 +85,8 @@ namespace PresentationTier
             }
             catch (Exception exception)
             {
+                
+                textBlock_Message.Text = "Under construccion :(";
                 throw exception;
             }
         }

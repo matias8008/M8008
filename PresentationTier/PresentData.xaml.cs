@@ -57,7 +57,7 @@ namespace PresentationTier
         {
             DataTable dataTable = persons.Persons_list();
             dataGrid_showInfo.DataContext = dataTable.DefaultView;
-            textBox_Test.Text = "Updated on date: " + DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
+            textBox_Test.Text = "Updated on date: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
 
         }
 
@@ -65,7 +65,7 @@ namespace PresentationTier
         {
             DataTable dataTable = employee.Employee_list();
             dataGrid_showInfo.DataContext = dataTable.DefaultView;
-            textBox_Test.Text = "Updated on date: " + DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
+            textBox_Test.Text = "Updated on date: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
 
         private void ShowInfoProducts()

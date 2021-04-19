@@ -100,9 +100,12 @@
             Style="{StaticResource NormalTextBlock}"
             Grid.Column="2"
             Grid.Row="7"/>
-        <TextBlock x:Name="textBlock_Message" 
-            Style="{StaticResource NormalTextBlock}"
-            Grid.Column="2" Grid.Row="11"/>
+        <Popup x:Name="popup" Width="300" Height="50" HorizontalAlignment="Center"
+               VerticalAlignment="Center">
+            <TextBlock x:Name="textBlock_Message" 
+            Style="{StaticResource NormalTextBlock}"/>
+            
+        </Popup>
         <Button
             Click="Button_InsertData_Click"
             Content="Insert data" 
@@ -136,18 +139,5 @@
             TextChanged="textBox_PAddress_TextChanged"
             Style="{StaticResource NormalTextBox}"
             Grid.Column="3" Grid.Row="7"/>
-        
-        <!--
-        
-        
-        
-        <TextBlock x:Name="textBlock_Id_Employee_show" Grid.Column="2" Height="23" Margin="0,275,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Button x:Name="button_Search" Content="Search" Grid.Column="4" Margin="25,234,0,0" Click="Button_Search_Click" HorizontalAlignment="Left" Width="138" Height="20" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Search" Grid.Column="4" Height="23" Margin="25,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="138"/>
-        <TextBlock x:Name="textBlock_Message" Grid.Column="3" HorizontalAlignment="Left" Margin="61,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="234" Foreground="#FFBF0D0D" Height="16"/>
-        <Label x:Name="label" Content="ID personal, last name &#xD;&#xA;or first name;" VerticalContentAlignment="Center" Grid.Column="4" Margin="33,139,0,0" VerticalAlignment="Top" Height="46" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontStretch="Condensed" Width="130"/>
-        <Button x:Name="button_Back" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="3,10,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="Button_Back_Click"/>
-        -->
-
     </Grid>
 </Page>

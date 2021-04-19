@@ -68,27 +68,40 @@ namespace PresentationTier
         }
         private void Button_InsertData_Click(object sender, RoutedEventArgs e)
         {
-            String message; 
+            String message = ""; 
             
-            try
+        if  (textBox_Id_Personal.Text != "" || textBox_LastName.Text != "" ||
+                textBox_FirstName.Text != "" || textBox_FirstName.Text != "" ||
+                gender != 0 || textBox_PAddress.Text != "" )
+                //datePicker_DateOfBirth.ApplyTemplate
             {
-                persons.Id_Personal = textBox_Id_Personal.Text;
-                persons.LastName = textBox_LastName.Text;
-                persons.FirstName = textBox_FirstName.Text;
-                persons.Gender = gender;
-                persons.PAddress = textBox_PAddress.Text;
-                persons.DateOfBirth = datePicker_DateOfBirth.SelectedDate.Value;
-                
-                message = persons.RegisterPersons();
+                try
+                {
+                    persons.Id_Personal = textBox_Id_Personal.Text;
+                    persons.LastName = textBox_LastName.Text;
+                    persons.FirstName = textBox_FirstName.Text;
+                    persons.Gender = gender;
+                    persons.PAddress = textBox_PAddress.Text;
+                    persons.DateOfBirth = datePicker_DateOfBirth.SelectedDate.Value;
 
-                textBlock_Message.Text = message;
+
+                    message = persons.RegisterPersons();
+
+
+                    textBlock_Message.Text = message;
+                }
+                catch (Exception exception)
+                {
+
+                    textBlock_Message.Text = "Under construccion :(";
+                    throw exception;
+                }
             }
-            catch (Exception exception)
-            {
-                
-                textBlock_Message.Text = "Under construccion :(";
-                throw exception;
-            }
+        else if (textBox_Id_Personal.Text == "" || textBox_LastName.Text == "" ||
+                textBox_FirstName.Text == "" || textBox_FirstName.Text == "" ||
+                gender == 0 || textBox_PAddress.Text == "")
+                textBlock_Message.Text = "One or more fields are empty";
+            textBlock_Message.Text = message;
         }
 
         private void Button_PersonList_Click(object sender, RoutedEventArgs e)

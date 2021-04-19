@@ -30,10 +30,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
-            
-
         </Grid.RowDefinitions>
-        
+
         <Label Content="INSERT DATA FORM"
                Style="{StaticResource NormalLabel}"
             Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"/>
@@ -75,18 +73,20 @@
                  Grid.Column="3" Grid.Row="3" TextChanged="TextBox_Id_Personal_TextChanged" />
         <TextBox x:Name="textBox_FirstName"
                  Style="{StaticResource NormalTextBox}"
-                 Grid.Column="3" Grid.Row="3" TextChanged="TextBox_FirstName_TextChanged" />
+                 Grid.Column="3" Grid.Row="4" TextChanged="TextBox_FirstName_TextChanged" />
         <TextBox x:Name="textBox_LastName"
                  Style="{StaticResource NormalTextBox}"
-                 Grid.Column="3" Grid.Row="4" TextChanged="TextBox_LastName_TextChanged" />
+                 Grid.Column="3" Grid.Row="5" TextChanged="TextBox_LastName_TextChanged" />
         <TextBox x:Name="textBox_PAddress"
                  Style="{StaticResource NormalTextBox}"
-                 Grid.Column="3" Grid.Row="5" TextChanged="textbox_address" />
+                 Grid.Column="3" Grid.Row="6" TextChanged="textbox_address" />
         <DatePicker x:Name="datePicker_DateOfBirth" 
                     Background="Yellow"
-                    Grid.Column="3" Grid.Row="6" Margin="5" Width="200"/>
+                    Grid.Column="3" Grid.Row="7" Margin="5" Width="200"/>
         
-        <TextBlock x:Name="textBlock_Message" TextWrapping="Wrap" Text="" Grid.Column="3" Grid.Row="2" Margin="5,5,5,5"/>
+        <TextBlock x:Name="textBlock_Message" TextWrapping="Wrap" 
+                   Text="" Grid.Column="4" Grid.Row="3" Margin="5"
+                   Foreground="Red" FontWeight="Bold"/>
 
         <Button x:Name="button_InsertData" Content="Insert data"
                 Style="{StaticResource NormalButtons}"
@@ -97,6 +97,5 @@
         <Button x:Name="Button_Back" Content="Back" 
                 Style="{StaticResource NormalButtons}"
                 Grid.Column="4" Grid.Row="6" Click="Button_Back_Click"/>
-
     </Grid>
 </Page>

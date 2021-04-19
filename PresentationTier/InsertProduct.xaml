@@ -45,7 +45,7 @@
                    Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="2" />
         <TextBlock Text="Product code" 
                    Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="3" />
-        <TextBlock Text="Categorie" 
+        <TextBlock Text="Categorie (select)" 
                    Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="4"/>
         <TextBlock Text="Dimentions" 
                    Style="{StaticResource NormalTextBlock}" Grid.Column="1" Grid.Row="5"/>

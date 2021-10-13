@@ -12,7 +12,7 @@ namespace DataTier
     {
         //Connection to HP laptop 
         public static SqlConnection sqlConnection = 
-            new SqlConnection("Data Source = MATIASJAVEG355A\\SQLEXPRESS; Initial Catalog = ProyectV1; Integrated Security = True");
+            new SqlConnection("Data Source = DESKTOP-S55JR9G\\SQLEXPRESS; Initial Catalog = ProyectV1; Integrated Security = True");
         //("Data Source = LAPTOP-82S43OE2\\SQLEXPRESS;Initial Catalog = ProyectV1; Integrated Security = True");
 
         //Open connection

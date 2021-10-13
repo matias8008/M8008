@@ -57,3 +57,13 @@ C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.csproj.
 C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.csproj.CopyComplete
 C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.dll
 C:\Users\matias8008\source\repos\ProjectV1\LogicTier\obj\Debug\LogicTier.pdb
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\bin\Debug\LogicTier.dll
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\bin\Debug\LogicTier.pdb
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\bin\Debug\DataTier.dll
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\bin\Debug\DataTier.pdb
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\bin\Debug\DataTier.dll.config
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\obj\Debug\LogicTier.csproj.AssemblyReference.cache
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\obj\Debug\LogicTier.csproj.CoreCompileInputs.cache
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\obj\Debug\LogicTier.csproj.CopyComplete
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\obj\Debug\LogicTier.dll
+C:\Users\matias8008\Source\Repos\M8008\LogicTier\obj\Debug\LogicTier.pdb

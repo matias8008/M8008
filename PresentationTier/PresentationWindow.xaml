@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
 
-    <StackPanel Background="Black">
+    <StackPanel Background="LightGray">
         <TextBlock FontSize="20" HorizontalAlignment="Center" 
                    Foreground="Yellow" Text="M8008"/>
 

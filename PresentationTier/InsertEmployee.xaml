@@ -7,22 +7,19 @@
         mc:Ignorable="d"
         Title="InsertEmployee">
 
-    <Grid Background="Black">
+    <Grid Background="LightGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
-            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -37,107 +34,94 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
-
-        <Grid Grid.Column="1" Grid.Row="7" Height="Auto">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="20"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="20"/>
-
-            </Grid.ColumnDefinitions>
-        </Grid>
-        <StackPanel Grid.Column="3" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Grid.Column="2" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
             <RadioButton x:Name="radioButton_Male"
                 GroupName="Gender" Content="Male"
-                Background="Yellow" Foreground="Yellow"
+                Background="White" Foreground="White"
                 Checked="RadioButton_Male_Checked"
                 Margin="10" Grid.Column="2" Grid.Row="8"/>
             <RadioButton x:Name="radioButton_Female" 
                 GroupName="Gender" Content="Female" 
-                Background="Yellow" Foreground="Yellow"
+                Background="White" Foreground="White"
                 Checked="RadioButton_Female_Checked" 
                 Margin="10" Grid.Column="2" Grid.Row="9"/>
             <RadioButton x:Name="radioButton_Other" 
                 GroupName="Gender" Content="Other"
-                Background="Yellow" Foreground="Yellow"
+                Background="White" Foreground="White"
                 Checked="RadioButton_Other_Checked"
                 Margin="10" Grid.Column="2" Grid.Row="10"/>
         </StackPanel>
-            
+
         <Label  
             Content="EMPLOYEE FORM" 
             Style="{StaticResource NormalLabel}"
-            Grid.Column="2"
+            Grid.Column="1"
             Grid.Row="2"
             Grid.ColumnSpan="2"
             HorizontalAlignment="Center"/>
         <TextBlock  
             Text="ID Personal" 
             Style="{StaticResource NormalTextBlock}"
-            Grid.Column="2"
+            Grid.Column="1"
             Grid.Row="3"/>
         <TextBlock  
             Text="First Name" 
             Style="{StaticResource NormalTextBlock}"
-            Grid.Column="2"
+            Grid.Column="1"
             Grid.Row="4"/>
         <TextBlock  
             Text="Last Name" 
             Style="{StaticResource NormalTextBlock}"
-            Grid.Column="2"
+            Grid.Column="1"
             Grid.Row="5"/>
         <TextBlock  
             Text="Date of Birth" 
             Style="{StaticResource NormalTextBlock}"
-            Grid.Column="2"
+            Grid.Column="1"
             Grid.Row="6"/>
         <TextBlock  
             Text="Address" 
             Style="{StaticResource NormalTextBlock}"
-            Grid.Column="2"
+            Grid.Column="1"
             Grid.Row="7"/>
         <Popup x:Name="popup" Width="300" Height="50" HorizontalAlignment="Center"
                VerticalAlignment="Center">
             <TextBlock x:Name="textBlock_Message" 
             Style="{StaticResource NormalTextBlock}"/>
-            
+
         </Popup>
         <Button
             Click="Button_InsertData_Click"
             Content="Insert data" 
             Style="{StaticResource NormalButtons}"
-            Grid.Column="3" Grid.Row="9"/>
+            Grid.Column="2" Grid.Row="9"/>
         <Button
             Click="Button_PersonList_Click"
             Content="List Employee" 
             Style="{StaticResource NormalButtons}"
-            Grid.Column="3" Grid.Row="10"/>
+            Grid.Column="2" Grid.Row="10"/>
         <Button
             Click="Button_Back_Click"
             Content="Back to Menu" 
             Style="{StaticResource NormalButtons}"
-            Grid.Column="3" Grid.Row="11"/>
+            Grid.Column="2" Grid.Row="11"/>
         <TextBox x:Name="textBox_Id_Personal"
             Style="{StaticResource NormalTextBox}"
-            Grid.Column="3" Grid.Row="3"/>
+            Grid.Column="2" Grid.Row="3"/>
         <TextBox x:Name="textBox_FirstName"
             Style="{StaticResource NormalTextBox}"
-            Grid.Column="3" Grid.Row="4"/>
+            Grid.Column="2" Grid.Row="4"/>
         <TextBox x:Name="textBox_LastName"
             Style="{StaticResource NormalTextBox}"
-            Grid.Column="3"
+            Grid.Column="2"
             Grid.Row="5"/>
         <DatePicker x:Name="datePicker_DateOfBirth"
             Background="Yellow"
             Margin="5"
-            Grid.Column="3" Grid.Row="6"/>
+            Grid.Column="2" Grid.Row="6"/>
         <TextBox x:Name="textBox_PAddress" 
             TextChanged="textBox_PAddress_TextChanged"
             Style="{StaticResource NormalTextBox}"
-            Grid.Column="3" Grid.Row="7"/>
+            Grid.Column="2" Grid.Row="7"/>
     </Grid>
 </Page>

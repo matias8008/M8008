@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:PresentationTier"
         mc:Ignorable="d"
         Title="Person Input Form">
-    
-    <Grid Background="Black">
+
+    <Grid Background="white">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
             <ColumnDefinition Width="*" />
@@ -38,13 +38,13 @@
         <StackPanel Grid.Column="3" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
             <RadioButton x:Name="radioButton_Male" GroupName="Gender" 
                          Content="Male" Checked="RadioButton_Male_Checked" 
-                         Background="Yellow" Foreground="Yellow" Margin="5"/>
+                         Background="white" Foreground="white" Margin="5"/>
             <RadioButton x:Name="radioButton_Female" GroupName="Gender" 
                          Content="Female" Checked="RadioButton_Female_Checked"
-                         Background="Yellow" Foreground="Yellow" Margin="5"/>
+                         Background="white" Foreground="white" Margin="5"/>
             <RadioButton x:Name="radioButton_Other" GroupName="Gender" 
                          Content="Other" Checked="RadioButton_Other_Checked"
-                         Background="Yellow" Foreground="Yellow" Margin="5"/>
+                         Background="white" Foreground="white" Margin="5"/>
 
         </StackPanel>
         

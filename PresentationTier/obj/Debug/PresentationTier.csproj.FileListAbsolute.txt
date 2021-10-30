@@ -200,6 +200,5 @@ C:\Users\matias8008\Source\Repos\M8008\PresentationTier\obj\Debug\PresentationTi
 C:\Users\matias8008\Source\Repos\M8008\PresentationTier\obj\Debug\PresentationTier.Properties.Resources.resources
 C:\Users\matias8008\Source\Repos\M8008\PresentationTier\obj\Debug\PresentationTier.csproj.GenerateResource.cache
 C:\Users\matias8008\Source\Repos\M8008\PresentationTier\obj\Debug\PresentationTier.csproj.CoreCompileInputs.cache
-C:\Users\matias8008\Source\Repos\M8008\PresentationTier\obj\Debug\PresentationTier.csproj.CopyComplete
 C:\Users\matias8008\Source\Repos\M8008\PresentationTier\obj\Debug\PresentationTier.exe
 C:\Users\matias8008\Source\Repos\M8008\PresentationTier\obj\Debug\PresentationTier.pdb

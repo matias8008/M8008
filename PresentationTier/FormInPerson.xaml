@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Person Input Form">
 
-    <Grid Background="white">
+    <Grid Background="LightGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
             <ColumnDefinition Width="*" />
@@ -38,13 +38,13 @@
         <StackPanel Grid.Column="3" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
             <RadioButton x:Name="radioButton_Male" GroupName="Gender" 
                          Content="Male" Checked="RadioButton_Male_Checked" 
-                         Background="white" Foreground="white" Margin="5"/>
+                         Background="white" Foreground="Black" Margin="5"/>
             <RadioButton x:Name="radioButton_Female" GroupName="Gender" 
                          Content="Female" Checked="RadioButton_Female_Checked"
-                         Background="white" Foreground="white" Margin="5"/>
+                         Background="white" Foreground="Black" Margin="5"/>
             <RadioButton x:Name="radioButton_Other" GroupName="Gender" 
                          Content="Other" Checked="RadioButton_Other_Checked"
-                         Background="white" Foreground="white" Margin="5"/>
+                         Background="white" Foreground="Black" Margin="5"/>
 
         </StackPanel>
         
@@ -81,7 +81,7 @@
                  Style="{StaticResource NormalTextBox}"
                  Grid.Column="3" Grid.Row="6" TextChanged="textbox_address" />
         <DatePicker x:Name="datePicker_DateOfBirth" 
-                    Background="Yellow"
+                    Background="Gray"
                     Grid.Column="3" Grid.Row="7" Margin="5" Width="200"/>
         
         <TextBlock x:Name="textBlock_Message" TextWrapping="Wrap" 

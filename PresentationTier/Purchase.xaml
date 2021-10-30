@@ -21,11 +21,11 @@
 
               Path=ActualHeight}">
       <!--Height="450" Width="800"> -->
-    <Grid Background="Black">
+    <Grid Background="LightGray">
         <Grid.ColumnDefinitions>
-            
+
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
@@ -34,7 +34,7 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -72,12 +72,13 @@
                  Style="{StaticResource NormalTextBox}" Grid.Column="3" Grid.Row="6"/>
         <TextBox x:Name="TextBoxEmail"
                  Style="{StaticResource NormalTextBox}" Grid.Column="3" Grid.Row="7"/>
-
+        
+        <!-- Buttons-->
         <Button x:Name="buttoInsert" Content="Insert"
-                Style="{StaticResource NormalButtons}" Grid.Column="2" Grid.Row="8"/>
+                Style="{StaticResource NormalButtons}" Grid.Column="3" Grid.Row="8"/>
         <Button x:Name="buttonShowList" Content="Show List" 
-                Style="{StaticResource NormalButtons}" Grid.Column="2" Grid.Row="9"/>
+                Style="{StaticResource NormalButtons}" Grid.Column="3" Grid.Row="9"/>
         <Button x:Name="button_Back" Content="Back"
-                Style="{StaticResource NormalButtons}" Grid.Column="2" Grid.Row="10"/>
+                Grid.Column="2" Grid.Row="10"/>
     </Grid>
 </Page>

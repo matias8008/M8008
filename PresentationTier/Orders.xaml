@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PresentationTier"
         mc:Ignorable="d"
         Title="Sales">
-    <Grid Background="Black">
+    <Grid Background="LightGray">
         
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>

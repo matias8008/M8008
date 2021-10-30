@@ -6,7 +6,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="NormalButtons" TargetType="Button">
-                <Setter Property="Background" Value="white"/>
+                <Setter Property="Background" Value="LightGray"/>
                 <Setter Property="ContentStringFormat" Value="Black"/>
                 <Setter Property="Width" Value="130"/>
                 <Setter Property="Height" Value="20"/>
@@ -14,7 +14,7 @@
             </Style>
 
             <Style x:Key="NormalTextBox" TargetType="TextBox">
-                <Setter Property="Background" Value="white"/>
+                <Setter Property="Background" Value="White"/>
                 <Setter Property="Width" Value="200" />
                 <Setter Property="Margin" Value="5" />
                 <Setter Property="Height" Value="30"/>
@@ -22,7 +22,7 @@
 
             <Style x:Key="NormalLabel" TargetType="Label">
                 <Setter Property="Background" Value="LightGray"/>
-                <Setter Property="Foreground" Value="white"/>
+                <Setter Property="Foreground" Value="Black"/>
                 <Setter Property="Margin" Value="5"/>
                 <Setter Property="FontSize" Value="30"/>
                 <Setter Property="VerticalAlignment" Value="Center"/>
@@ -30,7 +30,7 @@
 
             <Style x:Key="NormalTextBlock" TargetType="TextBlock">
                 <Setter Property="Background" Value="LightGray"/>
-                <Setter Property= "Foreground" Value="white" />
+                <Setter Property= "Foreground" Value="Black" />
                 <Setter Property="Margin" Value="5"/>
                 <Setter Property="FontSize" Value="12"/>
                 <Setter Property="VerticalAlignment" Value="Center"/>

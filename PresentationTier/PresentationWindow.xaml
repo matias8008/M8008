@@ -7,15 +7,13 @@
 
     <StackPanel Background="LightGray">
         <TextBlock FontSize="20" HorizontalAlignment="Center" 
-                   Foreground="Yellow" Text="M8008"/>
+                   Foreground="White" Text="M8008"/>
 
         <Label Content="MAIN MENU" Style="{StaticResource NormalLabel}"
                    HorizontalAlignment="Center"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
@@ -29,94 +27,56 @@
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="20"></RowDefinition>
             </Grid.RowDefinitions>
 
             <Button x:Name="Button_Employee" Click="GoToEmployeeForm"
-                        Grid.Column="2" Grid.Row="2" FontSize="20" 
-                        Height="150" Width="150" Background="#FF55EFC4">
-                <StackPanel>
-                    <TextBlock Text="Employee" HorizontalAlignment="Center"/>
-                    <Image Source="005-fight.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Employees"
+                        Grid.Column="2" Grid.Row="2"/>
             <Button x:Name="Button_Person" Click="Button_Person_Click"
-                        Grid.Column="3" Grid.Row="2" FontSize="20"
-                        Height="150" Width="150" Background="#FF00B894">
-                <StackPanel>
-                    <TextBlock Text="Person" HorizontalAlignment="Center"/>
-                    <Image Source="008-business man.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Users"
+                        Grid.Column="2" Grid.Row="3"/>
             <Button x:Name="Button_Products" Click="Button_Products_Click"
-                        Grid.Column="4" Grid.Row="2" FontSize="20"
-                        Height="150" Width="150" Background="#FFFFEAA7">
-                <StackPanel>
-                    <TextBlock Text="Products" HorizontalAlignment="Center"/>
-                    <Image Source="009-giftbox.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Products"
+                        Grid.Column="2" Grid.Row="4"/>
             <Button x:Name="Button_Sales" Click="Button_Sales_Click"
-                        Grid.Column="2" Grid.Row="3" FontSize="20"
-                        Height="150" Width="150" Background="#FF81ECEC">
-                <StackPanel>
-                    <TextBlock Text="Sales" HorizontalAlignment="Center"/>
-                    <Image Source="016-profit growth.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Sales"
+                        Grid.Column="2" Grid.Row="5"/>
             <Button x:Name="Button_Providers" Click="Button_Providers_Click"
-                        Grid.Column="3" Grid.Row="3" FontSize="20"
-                        Height="150" Width="150" Background="#FF00CEC9">
-                <StackPanel>
-                    <TextBlock Text="Providers" HorizontalAlignment="Center"/>
-                    <Image Source="020-vision.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Suppliers"
+                        Grid.Column="2" Grid.Row="6"/>
             <Button x:Name="Button_Clients" Click="Button_Clients_Click"
-                        Grid.Column="4" Grid.Row="3" FontSize="20"
-                        Height="150" Width="150" Background="#FFFAB1A0">
-                <StackPanel>
-                    <TextBlock Text="Clients" HorizontalAlignment="Center"/>
-                    <Image Source="015-business partnership.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Clients"
+                        Grid.Column="2" Grid.Row="7"/>
             <Button x:Name="Button_Mail"
-                        Grid.Column="2" Grid.Row="4" FontSize="20"
-                        Height="150" Width="150" Background="#FF74B9FF">
-                <StackPanel>
-                    <TextBlock Text="Mail" HorizontalAlignment="Center"/>
-                    <Image Source="019-idea.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Mail"
+                        Grid.Column="2" Grid.Row="8" />
             <Button x:Name="Button_Back" Click="Button_Back_Click"
-                        Grid.Column="3" Grid.Row="4" FontSize="20"
-                        Height="150" Width="150" Background="#FF0984E3">
-                <StackPanel>
-                    <TextBlock Text="Back" HorizontalAlignment="Center"/>
-                    <Image Source="006-goal.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
+                    Style="{StaticResource NormalButtons}"
+                    Content="BACK"
+                        Grid.Column="2" Grid.Row="9"
+                    Background="MediumVioletRed" Foreground="Aqua"/>
             <Button x:Name="Button_ChangeUser" Click="Button_ChangeUser_Click"
-                        Grid.Column="4" Grid.Row="4" FontSize="20"
-                        Height="150" Width="150" Background="#FFFF7675">
-                <StackPanel>
-                    <TextBlock Text="Change user" HorizontalAlignment="Center"/>
-                    <Image Source="012-superheroes.png" Opacity="1" Margin="5" Width="100">
-                    </Image>
-                </StackPanel>
-            </Button>
-            <TextBlock Text="Icons made by: https://www.flaticon.com/authors/photo3idea-studio"
-                       Style="{StaticResource NormalTextBlock}" Grid.Column="2" Grid.Row="5" 
-                       Grid.ColumnSpan="3"/>
+                    Style="{StaticResource NormalButtons}"
+                    Content="Change User"
+                        Grid.Column="2" Grid.Row="10" />
         </Grid>
     </StackPanel>
 </Page>

@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Clients">
 
-        <Grid Background="Black">
+        <Grid Background="LightGray">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="20"/>

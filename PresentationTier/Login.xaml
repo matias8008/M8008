@@ -6,20 +6,18 @@
              xmlns:local="clr-namespace:PresentationTier"
              mc:Ignorable="d">
 
-    <Grid Background="white">
+    <Grid Background="LightGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/> 
@@ -32,30 +30,37 @@
         <Label Content="WELCOME" Style="{StaticResource NormalLabel}"
                Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"
                HorizontalAlignment="Center"/>
+        
         <TextBlock x:Name="labelUserName" Text="User name" 
                Style="{StaticResource NormalTextBlock}"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
                Grid.Column="2" Grid.Row="3"/>
+        
         <TextBlock x:Name="labelPassword" Text="Password" 
                Style="{StaticResource NormalTextBlock}"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
                    Grid.Column="2" Grid.Row="4"/>
 
         <Button x:Name="button" Content="Go" Click="Button_Click"
                Style="{StaticResource NormalButtons}"
                Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2"/>
+        
         <TextBox x:Name="userTextBox" TextChanged="TextBox_TextChanged" 
                  Style="{StaticResource NormalTextBox}" 
-                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                 HorizontalAlignment="Center" VerticalAlignment="Center"
+                 
                  Grid.Column="3" Grid.Row="3"/>
+        
         <TextBlock x:Name="Response"
                    Style="{StaticResource NormalTextBlock}"
                    Grid.Column="3" Grid.Row="6"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
                    Foreground="Red" FontWeight="Bold"/>
         
         <PasswordBox x:Name="passwordBox" Margin="5" Height="30" Width="200"
             Grid.Column="3" Grid.Row="4"
-            Background="white" Foreground="white"
-            HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
             MaxLength="15" PasswordChar="*"
+            HorizontalAlignment="Center" VerticalAlignment="Center"
             PasswordChanged="PasswordChangedHandler" />
     </Grid>
 </Page>

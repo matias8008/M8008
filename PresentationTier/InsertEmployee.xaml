@@ -37,17 +37,17 @@
         <StackPanel Grid.Column="2" Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center">
             <RadioButton x:Name="radioButton_Male"
                 GroupName="Gender" Content="Male"
-                Background="White" Foreground="White"
+                Background="White" Foreground="Black"
                 Checked="RadioButton_Male_Checked"
                 Margin="10" Grid.Column="2" Grid.Row="8"/>
             <RadioButton x:Name="radioButton_Female" 
                 GroupName="Gender" Content="Female" 
-                Background="White" Foreground="White"
+                Background="White" Foreground="Black"
                 Checked="RadioButton_Female_Checked" 
                 Margin="10" Grid.Column="2" Grid.Row="9"/>
             <RadioButton x:Name="radioButton_Other" 
                 GroupName="Gender" Content="Other"
-                Background="White" Foreground="White"
+                Background="White" Foreground="Black"
                 Checked="RadioButton_Other_Checked"
                 Margin="10" Grid.Column="2" Grid.Row="10"/>
         </StackPanel>
@@ -116,7 +116,7 @@
             Grid.Column="2"
             Grid.Row="5"/>
         <DatePicker x:Name="datePicker_DateOfBirth"
-            Background="Yellow"
+            Background="Gray"
             Margin="5"
             Grid.Column="2" Grid.Row="6"/>
         <TextBox x:Name="textBox_PAddress" 
